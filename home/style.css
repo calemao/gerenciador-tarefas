@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,700&family=VT323&display=swap");
+:root {
+	--baseScreenHeight: 100vh;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	display: flex;
+	width: 100dvw;
+	min-height: 100dvh;
+}
+
+.page-title {
+	font-size: 28pt;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	text-wrap: wrap;
+	width: 80%;
+	text-align: center;
+	font-weight: 600;
+	color: white;
+}
+
+.form-half {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  height: 100%;
+  min-height: 50rem;
+	background: rgb(74, 74, 250);
+	background: linear-gradient(
+		90deg,
+		rgba(74, 74, 250, 1) 0%,
+		rgba(45, 45, 228, 1) 43%,
+		rgba(59, 59, 208, 1) 100%
+	);
+  padding: 5rem 0;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+  height: 100%;
+}
+
+.form-title {
+	font-size: 22pt;
+	color: white;
+}
+
+.form-label {
+	color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .illustration-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100rem;
+		min-height: 20rem;
+    position: relative;
+  }
+
+  .illustration{
+    position: absolute;
+    top: 22.5%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-container{
+    flex-direction: column;
+  }
+
+  .form-half {
+    min-height: 20rem;
+  }
+}
